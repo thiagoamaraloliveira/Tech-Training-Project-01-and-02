@@ -1,10 +1,9 @@
 body {
-   background-color: #157A6E !important;
+   background-color: aquamarine !important;
 }
 
 span {
-    color: white;
-    background-color: rgb(51 143 132);
+    background-color: rgb(201 251 233);
 }
 
 .row-containter {
@@ -14,7 +13,7 @@ span {
 .card {
     border: none;
     height: 320px;
-    background-color: rgba(255, 255, 255, .15) !important; 
+    background-color: rgba(255, 255, 255, .55) !important; 
     backdrop-filter: blur(5px) !important;
     border-radius: 10px;
 }
@@ -34,9 +33,9 @@ span {
 
 .forms-inputs input {
     height: 50px;
-    border: 2px solid #eee;
+    border: 2px solid #756a6a;
     width: 100%;
-    background-color: rgb(51 143 132);
+    background-color: rgb(201 251 233);
 }
 
 .forms-inputs input:focus {
