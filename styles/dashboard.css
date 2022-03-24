@@ -1,0 +1,171 @@
+body {
+  background-color: aquamarine !important;
+  height: 100vh;
+}
+
+p {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.container-total {
+  display: flex;
+  padding: 50px 10px 5px 10px;
+  gap: 30px;
+  justify-content: center;
+}
+.container-graphic {
+  display: flex;
+  padding: 5px 10px 5px 10px;
+  gap: 30px;
+  justify-content: center;
+}
+.container-table {
+  display: flex;
+  padding: 5px 10px 0px 10px;
+  gap: 30px;
+  justify-content: center;
+}
+.container-card-total {
+  background-color: white;
+  flex: 1;
+  height: 150px;
+  max-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  -webkit-box-shadow: 5px 7px 17px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 7px 17px 1px rgba(0, 0, 0, 0.35);
+}
+
+.container-card-graphic {
+  background-color: white;
+  flex: 1;
+  height: 170px;
+  max-width: 468px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 7px 17px 1px rgba(0, 0, 0, 0.35);
+}
+.container-card-table {
+  background-color: white;
+  flex: 1;
+  max-width: 970px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 7px 17px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 7px 17px 1px rgba(0, 0, 0, 0.35);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "a b" "a c";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 30px;
+}
+
+.img {
+  padding: 0 10px;
+  grid-area: a;
+}
+
+.text-title {
+  font-size: 30px;
+  grid-area: b;
+  margin: initial;
+}
+.text-subtitle {
+  font-size: 12px;
+  grid-area: c;
+}
+
+.li-title {
+  padding: 5px 5px 1px 10px;
+  list-style: none;
+}
+
+.li-label {
+  padding: 0 10px;
+  background-color: white;
+}
+.donut-img-box {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.list-group-box {
+  padding-bottom: 10px;
+}
+
+table thead {
+  background-color: #14796a;
+}
+
+table thead th {
+  color: white;
+}
+
+img,
+.list-group,
+.table {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@media (max-width: 650px) {
+  .container-total {
+    flex-wrap: wrap;
+  }
+  .container-card-total {
+    max-width: 100%;
+  }
+  .period-card {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 3fr;
+  }
+  .container-graphic {
+    flex-wrap: wrap;
+    padding-top: 0px;
+    flex-direction: column;
+  }
+  .container-card-graphic {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 493px) {
+  .container-table {
+    display: none;
+  }
+  .main-container {
+    padding-top: 0px;
+  }
+  .container-total {
+    padding: 26px 10px 5px 10px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
